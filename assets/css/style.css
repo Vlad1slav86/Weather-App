@@ -1,0 +1,148 @@
+/* global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0077be;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: #eee;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ccc;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  #current-weather {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: #0077be;
+    padding-left: 0.5rem;
+  }
+  
+  #weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 2rem;
+  }
+  
+  #weather-icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #weather-details p:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  
+  #forecast-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .forecast-card {
+    flex-basis: 30%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #0077be;
+    text-align: center;
+  }
+  
+  .forecast-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .forecast-card img {
+    margin-bottom: 0.5rem;
+  }
+  
+  #search-history ul {
+    list-style: none;
+  }
+  
+  #search-history li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* mobile styles */
+  
+  @media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem 0.5rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    #weather-icon {
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+    }
+  
+    #forecast-container {
+      flex-basis: 100%;
+    }
+  
+    .forecast-card {
+      flex-basis: 45%;
+    }
+  }
+  
