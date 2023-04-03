@@ -114,6 +114,7 @@
   
   #search-history ul {
     list-style: none;
+    cursor: pointer;
   }
   
   #search-history li:not(:last-child) {
